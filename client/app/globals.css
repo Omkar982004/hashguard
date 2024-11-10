@@ -58,7 +58,7 @@
   }
 
   body {
-    @apply flex flex-col bg-background text-foreground;
+    @apply flex flex-col bg-black text-foreground;
   }
 
   details > summary {
