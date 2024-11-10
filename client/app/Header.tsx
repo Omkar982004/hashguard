@@ -92,12 +92,12 @@ function onNavChange() {
 
 function Header() {
   return (
-    <header className="flex flex-col w-full h-fit bg-black">
-      <div className="flex flex-row lg:flex-row items-center justify-start border-b border-dwd-secondary1 relative h-16 lg:h-24">
+    <header className="flex flex-col w-full h-fit bg-transparent">
+      <div className="flex flex-row lg:flex-row items-center justify-start relative h-16 lg:h-24">
         <Link href="/" className="block h-full">
           {/* Big screen image */}
           <Image
-            src="/brand/logo_3.png"
+            src="/brand/logo_1.png"
             width={427}
             height={95}
             sizes="100%"
@@ -108,7 +108,7 @@ function Header() {
           />
           {/* Medium screen logo */}
           <Image
-            src="/brand/logo-square-light.png"
+            src="/brand/logo_6.png"
             width={0}
             height={0}
             sizes="100%"
