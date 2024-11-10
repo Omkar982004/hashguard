@@ -72,7 +72,7 @@ const ProjectOverviewSection: React.FC = () => {
       <motion.div
         className="w-full md:w-1/2 p-6 rounded-lg"
         initial={{ x: '30%', opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        whileInView={{ x: 0, opacity: 1 , backgroundColor: 'white' }}
         exit={{ x: '-30%', opacity: 0 }} // Exit animation: Slide out to the left and fade out
         transition={{ duration: 1 }}
       >
