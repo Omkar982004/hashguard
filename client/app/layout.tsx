@@ -5,17 +5,18 @@ import { Metadata } from 'next';
 
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
+
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    
+    <html lang="en">
       <body>
         <Header />
         {children}
-        <Footer />
       </body>
       <GoogleAnalytics gaId="G-1FVFMZZ0KL" />
     </html>

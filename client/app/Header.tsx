@@ -108,7 +108,7 @@ function Header() {
           />
           {/* Medium screen logo */}
           <Image
-            src="/brand/logo_6.png"
+            src="/brand/logo_1.png"
             width={0}
             height={0}
             sizes="100%"
