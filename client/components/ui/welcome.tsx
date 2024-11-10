@@ -55,7 +55,7 @@ const WelcomeSection: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="mt-5 relative w-[95%] rounded-lg flex items-center justify-center h-[80vh] overflow-hidden bg-black text-white pt-8 "
+      className="mt-5 mb-32 relative w-[95%] rounded-lg flex items-center justify-center h-[80vh] overflow-hidden bg-black text-white pt-8 "
       style={{
         clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
       }}

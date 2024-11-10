@@ -107,7 +107,7 @@ const ServicesSection = () => {
   }, []);
 
   // Calculate scale based on scroll position (adjust scaling to make sure heading doesn't disappear too soon)
-  const scale = Math.max(0, 30 - scrollY / 70); // Start with scale 2, and gradually decrease as you scroll
+  const scale = Math.max(0, 30 - scrollY / 80); // Start with scale 2, and gradually decrease as you scroll
   const opacity = Math.max(0.3, 1 - scrollY / 400); // Fade out slowly as you scroll
 
   return (

@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const ProjectOverviewSection: React.FC = () => {
   return (
     <motion.div
-      className="w-full p-6 bg-transparent rounded-lg shadow-lg mb-64 flex items-center justify-between h-screen"
+      className="w-full p-6 mt-16 bg-transparent rounded-lg shadow-lg mb-64 flex items-center justify-between h-screen"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}

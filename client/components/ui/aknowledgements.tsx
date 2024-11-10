@@ -64,7 +64,7 @@ const AcknowledgementsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen bg-black text-white flex flex-col items-center justify-center py-16 mt-8"
+      className="min-h-screen bg-black text-white flex flex-col items-center justify-center py-16 mt-32"
     >
       {/* Heading */}
       <h2 className="text-8xl font-bold text-gray-300 mb-8">Credits</h2>
