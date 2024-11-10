@@ -31,7 +31,7 @@ const services = [
 
 const ServiceCard = ({ service, index }: { service: any; index: number }) => {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.75,
   });
 

@@ -5,14 +5,11 @@ import { Metadata } from 'next';
 
 import React from 'react';
 import Header from './Header';
-// import Footer from './Footer';
-
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    
     <html lang="en">
       <body>
         <Header />

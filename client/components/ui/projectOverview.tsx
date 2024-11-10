@@ -1,5 +1,3 @@
-// components/ProjectOverviewSection.tsx
-
 'use client';
 
 import React from 'react';
@@ -13,6 +11,7 @@ const ProjectOverviewSection: React.FC = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
+      viewport={{ once: true }} // Trigger animation only once when it first comes into view
     >
       {/* Text and Title on Left */}
       <div className="w-full md:w-1/2 px-6 flex justify-center items-center flex-col">
@@ -22,6 +21,7 @@ const ProjectOverviewSection: React.FC = () => {
           whileInView={{ x: 0, opacity: 1 }}
           exit={{ x: 100, opacity: 0 }} // Exit animation: Slide out to the right and fade out
           transition={{ duration: 1 }}
+          viewport={{ once: true }} // Trigger animation only once
         >
           <span className="block text-5xl sm:text-6xl md:text-7xl">
             HashGuard's
@@ -34,6 +34,7 @@ const ProjectOverviewSection: React.FC = () => {
           whileInView={{ y: 0, opacity: 1 }}
           exit={{ y: -50, opacity: 0 }} // Exit animation: Move up and fade out
           transition={{ duration: 1 }}
+          viewport={{ once: true }} // Trigger animation only once
         >
           Our product provides a secure identity management system based on
           the Aadhaar number, leveraging a Virtual ID (VID) for
@@ -45,6 +46,7 @@ const ProjectOverviewSection: React.FC = () => {
           whileInView={{ y: 0, opacity: 1 }}
           exit={{ y: -50, opacity: 0 }} // Exit animation: Move up and fade out
           transition={{ duration: 1 }}
+          viewport={{ once: true }} // Trigger animation only once
         >
           A masked Aadhaar card is a version of the Aadhaar card where the
           first eight digits of the Aadhaar number are hidden and a VID is
@@ -59,6 +61,7 @@ const ProjectOverviewSection: React.FC = () => {
           whileInView={{ y: 0, opacity: 1 }}
           exit={{ y: -50, opacity: 0 }} // Exit animation: Move up and fade out
           transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }} // Trigger animation only once
         >
           <Link href="/about">
             <button className="bg-3D52A0 text-white px-6 py-3 rounded-lg shadow-md hover:bg-white hover:text-black transition duration-300 border">
@@ -75,6 +78,7 @@ const ProjectOverviewSection: React.FC = () => {
         whileInView={{ x: 0, opacity: 1 , backgroundColor: 'white' }}
         exit={{ x: '-30%', opacity: 0 }} // Exit animation: Slide out to the left and fade out
         transition={{ duration: 1 }}
+        viewport={{ once: true }} // Trigger animation only once
       >
         <img
           src="/images/ProjectAdhaarLOGO.png" // Replace with your actual image path
