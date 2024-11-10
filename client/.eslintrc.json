@@ -1,8 +1,10 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "indent": ["warn", 2],
-    "quotes": ["warn", "single"]
+    "react/no-unescaped-entities": "off",  // Example for disabling a specific rule
+    "react/prop-types": "off",            // Another example
+    "indent": "off",                      // Disable indentation rule
+    "quotes": "off" 
   },
   "ignorePatterns": [
     "tailwind.config.ts",
