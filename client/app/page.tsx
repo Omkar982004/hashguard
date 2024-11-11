@@ -5,11 +5,10 @@ import Cookies from 'js-cookie';
 import Link from 'next/link';
 import ServicesSection from '@/components/ui/service';
 import AcknowledgementsSection from '@/components/ui/aknowledgements';
-import GitHubSection from '@/components/ui/githubsec';
 import WelcomeSection from '@/components/ui/welcome';
 import Lenis from '@studio-freight/lenis';
 import ProjectOverviewSection from '@/components/ui/projectOverview';
-
+import GitHubSectiondiv from '@/components/ui/githubdiv';
 const HomePage: React.FC = () => {
   const [loggedInEmail, setLoggedInEmail] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -48,11 +47,14 @@ const HomePage: React.FC = () => {
       <WelcomeSection />
 
       {/* Project Overview Section */}
-      <ProjectOverviewSection></ProjectOverviewSection>
+      <ProjectOverviewSection />
 
       <ServicesSection />
-      <GitHubSection />
-      <AcknowledgementsSection />
+      <GitHubSectiondiv/>
+      <div className="flex justify-center items-center h-auto w-[50vw] bg-transparent">
+      <img src="/images/snippet4.png" alt="Transparent PNG" className="object-contain" />
+      </div>
+      {/* <AcknowledgementsSection /> */}
     </div>
   );
 };

@@ -63,7 +63,7 @@ const ProjectOverviewSection: React.FC = () => {
           transition={{ duration: 1, delay: 0.3 }}
           viewport={{ once: true }} // Trigger animation only once
         >
-          <Link href="/about">
+          <Link href="https://github.com/Omkar982004/hashguard">
             <button className="bg-3D52A0 text-white px-6 py-3 rounded-lg shadow-md hover:bg-white hover:text-black transition duration-300 border">
               Learn More
             </button>

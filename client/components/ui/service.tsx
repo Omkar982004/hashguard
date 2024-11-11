@@ -1,16 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from 'next/image';
-import '@/styles/styles.css'
+import Image from "next/image";
+import Link from "next/link";
 
-const services = [
+type Service = {
+  step: string;
+  name: string;
+  imageUrl: string;
+  description: string;
+  pageLink: string;
+};
+
+const services: Service[] = [
   {
     step: "01",
     name: "Generate Masked Aadhaar",
     imageUrl: "/images/service1.png",
     description:
       "Generate a masked version of your Aadhaar for enhanced privacy. Masked Aadhaar hides sensitive details, allowing secure sharing.",
+    pageLink: "/learn_masked_aadhaar",
   },
   {
     step: "02",
@@ -19,6 +28,7 @@ const services = [
       "https://plus.unsplash.com/premium_photo-1694557636097-5969bae91ba8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Authenticate your Virtual ID (VID) quickly and securely. Our VID authentication process ensures safe and reliable identity verification.",
+    pageLink: "/learn_auth_vid",
   },
   {
     step: "03",
@@ -26,10 +36,14 @@ const services = [
     imageUrl:
       "https://images.unsplash.com/photo-1507208773393-40d9fc670acf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
     description: "Coming soon...",
+    pageLink: "https://github.com/Omkar982004/hashguard",
   },
 ];
 
-const ServiceCard = ({ service, index }: { service: any; index: number }) => {
+const ServiceCard: React.FC<{ service: Service; index: number }> = ({
+  service,
+  index,
+}) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.75,
@@ -72,11 +86,11 @@ const ServiceCard = ({ service, index }: { service: any; index: number }) => {
           <div className="flex min-h-full flex-col items-center justify-center">
             <h2 className="text-2xl font-bold mb-4">{service.name}</h2>
             <p className="text-lg text-center mb-4">{service.description}</p>
-            <a href="tel:555-555-5555" className="inline-flex">
-              <button className="my-2 bg-yellow-800 hover:bg-yellow-700 text-white font-bold py-2 px-4 w-auto rounded-full inline-flex items-center">
+            <Link href={service.pageLink}>
+              <div className="my-2 bg-yellow-800 hover:bg-yellow-700 text-white font-bold py-2 px-4 w-auto rounded-full inline-flex items-center">
                 <span>Read More</span>
-              </button>
-            </a>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -84,52 +98,44 @@ const ServiceCard = ({ service, index }: { service: any; index: number }) => {
   );
 };
 
-const ServicesSection = () => {
-  // State to track scroll position
+const ServicesSection: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
 
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Optional: Trigger only once
-    threshold: 0.1, // Optional: 10% visibility threshold
-  });
-
-  // Update scroll position on scroll event
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY); // Update scroll position
+      setScrollY(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll); // Cleanup listener
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // Calculate scale based on scroll position (adjust scaling to make sure heading doesn't disappear too soon)
-  const scale = Math.max(0, 30 - scrollY / 80); // Start with scale 2, and gradually decrease as you scroll
-  const opacity = Math.max(0.3, 1 - scrollY / 400); // Fade out slowly as you scroll
+  const scale = Math.max(0, 30 - scrollY / 80);
+  const opacity = Math.max(0.3, 1 - scrollY / 400);
 
   return (
     <section className="py-16 mx-auto sm:py-20 mt-32 mb-32">
       <div className="mx-auto flex justify-center object-center px-4 py-16 sm:py-24 lg:max-w-7xl">
         <div className="flex justify-center object-center flex-col gap-12 sm:gap-16">
-          {/* Services Heading with Continuous Scroll Animations */}
+          {/* Services Heading with Scroll Animations */}
           <motion.h2
             className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-5.5xl text-center mb-4"
             style={{
-              transform: `scale(${scale})`, // Apply dynamic scale
-              opacity: opacity, // Apply dynamic opacity
+              transform: `scale(${scale})`,
+              opacity: opacity,
             }}
             transition={{
-              duration: 0.2, // Smooth transition
+              duration: 0.2,
               ease: "easeOut",
             }}
           >
             Services
           </motion.h2>
 
-          {/* Services Cards */}
+          {/* Service Cards */}
           <div className="mx-auto grid gap-12 space-y-10 md:space-y-0 sm:gap-16 lg:grid-cols-3">
             {services.map((service, index) => (
               <ServiceCard key={service.name} service={service} index={index} />
