@@ -80,10 +80,10 @@ const WelcomeSection: React.FC = () => {
           <p className="text-lg text-gray-300 z-10">Loading...</p>
         ) : loggedInEmail ? (
           <div className="flex items-center mt-4 z-10">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold text-2xl uppercase -mr-3 relative z-10">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold text-2xl uppercase -mr-3 relative z-20">
               {getInitials(loggedInEmail)}
             </div>
-            <div className="bg-gray-700 py-2 pl-6 pr-4 rounded-lg flex items-center z-10">
+            <div className="bg-gray-800 py-2 pl-6 pr-4 rounded-lg flex items-center z-10">
               <p className="text-green-400 z-10">Signed in as: {loggedInEmail}</p>
             </div>
           </div>
