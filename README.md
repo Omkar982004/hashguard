@@ -44,7 +44,7 @@ UIDAI itself recommends masking Aadhaar numbers in digital and physical displays
 
 When the VID is generated or requested, it’s mapped internally to the full Aadhaar (not shown externally).  
 Authentication using the VID allows users to verify their identity without needing to display or directly reference their full Aadhaar.  
-In short, the masked Aadhaar number is primarily a privacy display mechanism rather than a means of validation, making it useful for non-sensitive views within the app.
+Briefly, the masked Aadhaar number is primarily a privacy display mechanism rather than a means of validation, making it useful for non-sensitive views within the app.
 
 ### **Project Overview:**
 
