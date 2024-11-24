@@ -64,7 +64,7 @@ const WelcomeSection: React.FC = () => {
       <div className="mb-64 w-3/4 h-auto flex flex-col items-center justify-center bg-transparent rounded-lg shadow-lg">
         <div className="relative w-full items-center mt-32 mb-4">
         <Image
-      src="/brand/logotext.png"  // Replace with your image path
+      src="/brand/logotext.webp"  // Replace with your image path
       alt="HashGuard Logo"
       width={800}  // Set the width of the image
       height={100}  // Set the height of the image
@@ -106,7 +106,7 @@ const WelcomeSection: React.FC = () => {
       {/* Background Image with Parallax Motion */}
       <div className="fixed top-[-10vh] left-0 h-[120vh] w-full rounded-lg">
         <motion.div style={{ y }} className="relative w-full h-full">
-          <Image src="/images/image.png" alt="Parallax Background" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/image.webp" alt="Parallax Background" fill style={{ objectFit: 'cover' }} />
         </motion.div>
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
       </div>

@@ -52,7 +52,7 @@ const WelcomeSection: React.FC = () => {
       {/* Background Image with Parallax Motion */}
       <div className="fixed top-[-10vh]  h-[120vh] w-full rounded-lg">
         <motion.div style={{ y }} className="relative w-full h-full">
-          <Image src="/images/image2.png" alt="Parallax Background" fill style={{ objectFit: 'cover' }} />
+          <Image src="/images/image2.webp" alt="Parallax Background" fill style={{ objectFit: 'cover' }} />
         </motion.div>
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-90"></div>
       </div>

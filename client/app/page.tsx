@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
       <ServicesSection />
       <GitHubSectiondiv/>
       <div className="flex justify-center items-center h-auto w-[50vw] bg-transparent">
-      <img src="/images/snippet4.png" alt="Transparent PNG" className="object-contain" />
+      <img src="/images/snippet4.webp" alt="Transparent PNG" className="object-contain" />
       </div>
       {/* <AcknowledgementsSection /> */}
     </div>

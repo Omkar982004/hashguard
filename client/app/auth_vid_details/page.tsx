@@ -84,7 +84,7 @@ const AuthVidDetails: React.FC = () => {
                 {/* Profile Image Placeholder */}
                 <div className="flex justify-center">
                     <div className="w-48 h-48">
-                        <img src="/images/profile.png" alt="Profile" className="w-full h-full" />
+                        <img src="/images/profile.webp" alt="Profile" className="w-full h-full" />
                     </div>
                 </div>
 
