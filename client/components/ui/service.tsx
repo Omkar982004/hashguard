@@ -16,7 +16,7 @@ const services: Service[] = [
   {
     step: "01",
     name: "Generate Masked Aadhaar",
-    imageUrl: "/images/service1.png",
+    imageUrl: "/images/service1.webp",
     description:
       "Generate a masked version of your Aadhaar for enhanced privacy. Masked Aadhaar hides sensitive details, allowing secure sharing.",
     pageLink: "/learn_masked_aadhaar",

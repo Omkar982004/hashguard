@@ -81,7 +81,7 @@ const ProjectOverviewSection: React.FC = () => {
         viewport={{ once: true }} // Trigger animation only once
       >
         <img
-          src="/images/ProjectAdhaarLOGO.png" // Replace with your actual image path
+          src="/images/ProjectAdhaarLOGO.webp" // Replace with your actual image path
           alt="HashGuard Logo"
           className="w-full"
         />

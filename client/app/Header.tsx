@@ -97,7 +97,7 @@ function Header() {
         <Link href="/" className="block h-full">
           {/* Big screen image */}
           <Image
-            src="/brand/logo_1.png"
+            src="/brand/logo_1.webp"
             width={427}
             height={95}
             sizes="100%"
@@ -108,7 +108,7 @@ function Header() {
           />
           {/* Medium screen logo */}
           <Image
-            src="/brand/logo_1.png"
+            src="/brand/logo_1.webp"
             width={0}
             height={0}
             sizes="100%"
