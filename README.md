@@ -28,6 +28,61 @@ Concluded
 <img src="public/Masked_Aadhaar_example.jpg" alt="Masked Aadhaar example" width="300"/>
 </p>
 
+### **Project Overview & website preview:**
+
+This project is designed to provide a secure identity management system based on the Aadhaar number, using a Virtual ID (VID) for authentication.
+
+<p align="center" style="margin-top: 1rem;">
+<img src="public/homepage_snippet.png" alt="homepage snippet 1" width="250"/>
+</p>
+
+<p align="center" style="margin-top: 1rem;">
+<img src="public/homepage_snippet2.png" alt="homepage snippet 2" width="250"/>
+</p>
+
+<p align="center" style="margin-top: 1rem;">
+<img src="public/homepage_snippet3.png" alt="homepage snippet 3" width="250"/>
+</p>
+
+### **How It Works:**
+
+1. **User Registration:**  
+   * Users register with their Aadhaar number and email ID. The Aadhaar number is securely stored (hashed/encrypted). 
+
+   <p align="center" style="margin-top: 1rem;">
+      <img src="public/signup_page_snippet.png" alt="signup page snippet" width="250"/>
+   </p>
+2. **VID Generation:**  
+   * Users can generate a unique VID after verifying their identity through an OTP sent to their registered email. This VID can be used instead of the Aadhaar number for authentication.
+
+   <p align="center" style="margin-top: 1rem;">
+   <img src="public/services_snippet.png" alt="services snippet" width="250"/>
+   </p>  
+
+3. **Masked Aadhaar Generation and sent via gmail:**  
+   * An Aadhaar-like image is created, displaying the user’s photo (if uploaded) and optional details (address, DOB, etc.), along with the masked Aadhaar number and VID number
+
+   <p align="center" style="margin-top: 1rem;">
+      <img src="public/mail_snippet.png" alt="mail snippet 1" width="250"/>
+   </p>
+
+4. **Authentication:**  
+   * Users authenticate using their VID, requiring another OTP verification for added security. A voice CAPTCHA may also be implemented for further verification.
+
+   <p align="center" style="margin-top: 1rem;">
+      <img src="public/authenticate_snippet.png" alt="authenticate snippet1" width="250"/>
+   </p>  
+   <p align="center" style="margin-top: 1rem;">
+      <img src="public/authenticate_snippet2.png" alt="authenticate snippet 2" width="250"/>
+   </p>  
+
+5. **VID Retrieval/Replacement:**  
+   * Users can retrieve or replace their VID as needed, again using OTP verification to ensure security.  
+6. **Security Measures:**  
+   * The system employs post-quantum cryptography for secure data handling and logs all actions for auditing and consent management.
+
+This project aims to enhance privacy and security in identity management while providing a user-friendly experience.
+
 **Uses of Masked Aadhaar Card:**
 
 * **Identity Verification:** Used for identity verification in various services without exposing the full Aadhaar number.  
@@ -54,30 +109,6 @@ UIDAI itself recommends masking Aadhaar numbers in digital and physical displays
 When the VID is generated or requested, it’s mapped internally to the full Aadhaar (not shown externally).  
 Authentication using the VID allows users to verify their identity without needing to display or directly reference their full Aadhaar.  
 Briefly, the masked Aadhaar number is primarily a privacy display mechanism rather than a means of validation, making it useful for non-sensitive views within the app.
-
-### **Project Overview:**
-
-This project is designed to provide a secure identity management system based on the Aadhaar number, using a Virtual ID (VID) for authentication.
-
-### **How It Works:**
-
-1. **User Registration:**  
-   * Users register with their Aadhaar number and email ID. The Aadhaar number is securely stored (hashed/encrypted).  
-2. **VID Generation:**  
-   * Users can generate a unique VID after verifying their identity through an OTP sent to their registered email. This VID can be used instead of the Aadhaar number for authentication.  
-3. **Aadhaar Image Generation:**  
-   * An Aadhaar-like image is created, displaying the user’s photo (if uploaded) and optional details (address, DOB, etc.), along with the masked Aadhaar number.  
-4. **Authentication:**  
-   * Users authenticate using their VID, requiring another OTP verification for added security. A voice CAPTCHA may also be implemented for further verification.  
-5. **VID Retrieval/Replacement:**  
-   * Users can retrieve or replace their VID as needed, again using OTP verification to ensure security.  
-6. **Security Measures:**  
-   * The system employs post-quantum cryptography for secure data handling and logs all actions for auditing and consent management.
-
-This project aims to enhance privacy and security in identity management while providing a user-friendly experience.
-
-***Future aspects***  
-***1)UI enhancements***  
 
 ## 👏 Contributors
 
