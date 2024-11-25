@@ -33,15 +33,15 @@ Concluded
 This project is designed to provide a secure identity management system based on the Aadhaar number, using a Virtual ID (VID) for authentication.
 
 <p align="center" style="margin-top: 1rem;">
-<img src="public/homepage_snippet.png" alt="homepage snippet 1" width="450"/>
+<img src="public/homepage_snippet.png" alt="homepage snippet 1" width="700"/>
 </p>
 
 <p align="center" style="margin-top: 1rem;">
-<img src="public/homepage_snippet2.png" alt="homepage snippet 2" width="450"/>
+<img src="public/homepage_snippet2.png" alt="homepage snippet 2" width="700"/>
 </p>
 
 <p align="center" style="margin-top: 1rem;">
-<img src="public/homepage_snippet3.png" alt="homepage snippet 3" width="450"/>
+<img src="public/homepage_snippet3.png" alt="homepage snippet 3" width="700"/>
 </p>
 
 ### **How It Works:**
@@ -50,30 +50,30 @@ This project is designed to provide a secure identity management system based on
    * Users register with their Aadhaar number and email ID. The Aadhaar number is securely stored (hashed/encrypted). 
 
    <p align="center" style="margin-top: 1rem;">
-      <img src="public/signup_snippet.png" alt="signup page snippet" width="450"/>
+      <img src="public/signup_snippet.png" alt="signup page snippet" width="700"/>
    </p>
 2. **VID Generation:**  
    * Users can generate a unique VID after verifying their identity through an OTP sent to their registered email. This VID can be used instead of the Aadhaar number for authentication.
 
    <p align="center" style="margin-top: 1rem;">
-   <img src="public/services_snippet.png" alt="services snippet" width="450"/>
+   <img src="public/services_snippet.png" alt="services snippet" width="700"/>
    </p>  
 
-3. **Masked Aadhaar Generation and sent via gmail:**  
+3. **Masked Aadhaar Generation and sent via gmail:*700
    * An Aadhaar-like image is created, displaying the user’s photo (if uploaded) and optional details (address, DOB, etc.), along with the masked Aadhaar number and VID number
 
    <p align="center" style="margin-top: 1rem;">
-      <img src="public/mail_snippet.png" alt="mail snippet 1" width="450"/>
+      <img src="public/mail_snippet.png" alt="mail snippet 1" width="700"/>
    </p>
 
 4. **Authentication:**  
    * Users authenticate using their VID, requiring another OTP verification for added security. A voice CAPTCHA may also be implemented for further verification.
 
    <p align="center" style="margin-top: 1rem;">
-      <img src="public/authenticate_snippet.png" alt="authenticate snippet1" width="450"/>
+      <img src="public/authenticate_snippet.png" alt="authenticate snippet1" width="700"/>
    </p>  
    <p align="center" style="margin-top: 1rem;">
-      <img src="public/authenticate_snippet2.png" alt="authenticate snippet 2" width="450"/>
+      <img src="public/authenticate_snippet2.png" alt="authenticate snippet 2" width="700"/>
    </p>  
 
 5. **VID Retrieval/Replacement:**  
