@@ -33,15 +33,15 @@ Concluded
 This project is designed to provide a secure identity management system based on the Aadhaar number, using a Virtual ID (VID) for authentication.
 
 <p align="center" style="margin-top: 1rem;">
-<img src="public/homepage_snippet.png" alt="homepage snippet 1" width="250"/>
+<img src="public/homepage_snippet.png" alt="homepage snippet 1" width="400"/>
 </p>
 
 <p align="center" style="margin-top: 1rem;">
-<img src="public/homepage_snippet2.png" alt="homepage snippet 2" width="250"/>
+<img src="public/homepage_snippet2.png" alt="homepage snippet 2" width="400"/>
 </p>
 
 <p align="center" style="margin-top: 1rem;">
-<img src="public/homepage_snippet3.png" alt="homepage snippet 3" width="250"/>
+<img src="public/homepage_snippet3.png" alt="homepage snippet 3" width="400"/>
 </p>
 
 ### **How It Works:**
@@ -63,17 +63,17 @@ This project is designed to provide a secure identity management system based on
    * An Aadhaar-like image is created, displaying the user’s photo (if uploaded) and optional details (address, DOB, etc.), along with the masked Aadhaar number and VID number
 
    <p align="center" style="margin-top: 1rem;">
-      <img src="public/mail_snippet.png" alt="mail snippet 1" width="250"/>
+      <img src="public/mail_snippet.png" alt="mail snippet 1" width="400"/>
    </p>
 
 4. **Authentication:**  
    * Users authenticate using their VID, requiring another OTP verification for added security. A voice CAPTCHA may also be implemented for further verification.
 
    <p align="center" style="margin-top: 1rem;">
-      <img src="public/authenticate_snippet.png" alt="authenticate snippet1" width="250"/>
+      <img src="public/authenticate_snippet.png" alt="authenticate snippet1" width="400"/>
    </p>  
    <p align="center" style="margin-top: 1rem;">
-      <img src="public/authenticate_snippet2.png" alt="authenticate snippet 2" width="250"/>
+      <img src="public/authenticate_snippet2.png" alt="authenticate snippet 2" width="400"/>
    </p>  
 
 5. **VID Retrieval/Replacement:**  
