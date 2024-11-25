@@ -50,10 +50,11 @@ const ServiceCard: React.FC<{ service: Service; index: number }> = ({
   });
 
   return (
+    <>
     <motion.div
       key={service.name}
       ref={ref}
-      className="group h-96 w-96 [perspective:1000px]"
+      className="group h-96 w-96 [perspective:1000px] hidden sm:block"
       initial={{ opacity: 0, x: -50 }}
       animate={{
         opacity: inView ? 1 : 0,
@@ -95,6 +96,34 @@ const ServiceCard: React.FC<{ service: Service; index: number }> = ({
         </div>
       </div>
     </motion.div>
+
+    {/* For mobile screens, display a simplified version */}
+    <div className="sm:hidden flex justify-between items-center p-4 bg-gray-800 rounded-lg shadow-lg mb-6">
+    <div className="w-full">
+      <p className="text-white text-xl">{service.name}</p>
+    </div>
+
+    {/* Learn More SVG Icon */}
+    <Link href={service.pageLink}>
+      <div className="ml-4 flex items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-6 h-6 text-white"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </div>
+    </Link>
+  </div>
+  </>
   );
 };
 
@@ -122,7 +151,7 @@ const ServicesSection: React.FC = () => {
         <div className="flex justify-center object-center flex-col gap-12 sm:gap-16">
           {/* Services Heading with Scroll Animations */}
           <motion.h2
-            className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-5.5xl text-center mb-4"
+            className="text-xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5.5xl text-center mb-4"
             style={{
               transform: `scale(${scale})`,
               opacity: opacity,
@@ -139,6 +168,7 @@ const ServicesSection: React.FC = () => {
           <div className="mx-auto grid gap-12 space-y-10 md:space-y-0 sm:gap-16 lg:grid-cols-3">
             {services.map((service, index) => (
               <ServiceCard key={service.name} service={service} index={index} />
+              
             ))}
           </div>
         </div>

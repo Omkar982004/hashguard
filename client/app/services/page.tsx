@@ -42,7 +42,7 @@ const Services: React.FC = () => {
                 {/* Service Card: Authenticate VID */}
                 <div 
                     className="bg-gray-800 rounded-lg shadow-lg p-6 hover:bg-ADBBD4 transition transform hover:scale-105"
-                    onClick={() => navigateTo('/auth_vid')}
+                    onClick={() => navigateTo('/learn_auth_vid')}
                 >
                     <div className="flex items-center justify-center mb-4 text-4xl text-green-500">
                         <FaShieldAlt />
