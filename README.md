@@ -92,6 +92,13 @@ This project aims to provide a secure identity management system based on the Aa
 6. **Security Measures:**
    - The system employs **post-quantum cryptography** for secure data handling and logs all actions for auditing and consent management.
 
+7. **Responsive design:** 
+   - The website is fully responsive and compatible for all device sizes
+
+   <p align="center">
+      <img src="public/responsive.png" alt="responsive" width="100px" />
+   </p>
+
 ---
 
 ### **Uses of Masked Aadhaar Card**
