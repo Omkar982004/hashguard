@@ -96,7 +96,7 @@ This project aims to provide a secure identity management system based on the Aa
    - The website is fully responsive and compatible for all device sizes
 
    <p align="center">
-      <img src="public/responsive.png" alt="responsive" width="100px" />
+      <img src="public/responsive.png" alt="responsive" width="250px" />
    </p>
 
 ---
